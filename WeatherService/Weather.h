@@ -25,5 +25,14 @@ public:
 		windSpeed = 4.27;
 		clouds = 100;
 	}
+	Weather(double temperature, string weather,double windSpeed,int clouds, string city, double lon, double lat) {
+		this->city = city;
+		this->lon = lon;
+		this->lat = lat;
+		this->temperature = temperature;
+		this->weather = weather;
+		this->windSpeed = windSpeed;
+		this->clouds = clouds;
+	}
 };
 
