@@ -1,3 +1,4 @@
+
 #include "JsonService.h"
 
 
@@ -10,11 +11,11 @@ Weather JsonService::getWeather(std::string s)
 
     json j;
     j = json::parse(fin);
-    std::string city = j["name"]; //  Êèðîâ
+    std::string city = j["name"]; //  ÃŠÃ¨Ã°Ã®Ã¢
     double lon = j["coord"]["lon"]; // 49.6601
     double lat = j["coord"]["lat"]; // 58.5966  
     double temperature = j["main"]["temp"]; // 5.69
-    std::string weather = j["weather"][0]["main"]; // äîæäü
+    std::string weather = j["weather"][0]["main"]; // Ã¤Ã®Ã¦Ã¤Ã¼
     double windSpeed = j["wind"]["speed"]; // 4.27
     int clouds = j["clouds"]["all"]; // 100
     return Weather(temperature, weather, windSpeed, clouds, city, lon, lat);
