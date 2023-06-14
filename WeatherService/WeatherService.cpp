@@ -1,5 +1,6 @@
 ﻿// WeatherService.cpp : Этот файл содержит функцию "main". Здесь начинается и заканчивается выполнение программы.
 //
+
 #include "json.hpp"
 #include "Weather.h"
 #include <iostream>
